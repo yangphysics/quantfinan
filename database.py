@@ -4,12 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import statsmodels.formula.api as smf
 import sys
-from snp500 import SNP500,print_symbol
-
-pd.set_option('display.mpl_style', 'default')
-plt.rcParams['figure.figsize'] = (15, 3)
-plt.rcParams['font.family'] = 'sans-serif'
-
 
 
 #   prepare the data_base
@@ -32,6 +26,15 @@ def get_stock_period(symbol='IBM', d=pd.datetime(2015, 9, 15), period=90):
     return stock
 
 def prepare_database(db_name="./snp500_db_test.sqlite", date=pd.datetime(2015, 10, 30), period=4000):
+    #  import snp500 package
+    try: 
+        from snp500 import SNP500,print_symbol
+    except:
+        url = 'https://raw.githubusercontent.com/yangphysics/snp500/master/snp500.py'
+        import subprocess
+        msg = subprocess.check_output("wget {0}".format(url), shell=True)
+        print(msg)
+        from snp500 import SNP500,print_symbol
     #  read in symbols included in S&P 500
     snp0 = SNP500(is_print=True)
     snp = snp0(date=date.strftime('%Y-%m-%d'))
