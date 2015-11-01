@@ -1,5 +1,5 @@
-pandas=0.16.2
-numpy=1.9.3
-matplotlib=1.4.3
-sqlite3=2.6.0
-statsmodels=0.6.1
+pandas==0.16.2
+numpy==1.9.3
+matplotlib==1.4.3
+sqlite3==2.6.0
+statsmodels==0.6.1
