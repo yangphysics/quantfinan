@@ -3,7 +3,7 @@ Figure 2
 
 This figure describes portfolio constructed by using the
 QuantFinan Monmentum code:
-![portfolio](https://raw.githubusercontent.com/yangphysics/quantfinan/master/portfolio.png)
+![portfolio](https://raw.githubusercontent.com/yangphysics/quantfinan/master/doc/portfolio.png)
 
 The data is extracted from Yahoo Finance
 [Yahoo Finance](http://finance.yahoo.com/).
