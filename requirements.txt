@@ -2,4 +2,4 @@ pandas==0.16.2
 numpy==1.9.3
 matplotlib==1.4.3
 statsmodels==0.6.1
-git+git://github.com/yangphysics/snp500
+#git+git://github.com/yangphysics/snp500
